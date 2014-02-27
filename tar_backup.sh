@@ -14,7 +14,7 @@ target="/home/documents/backups" 	 # Destination of backup file.
 tar -czf $target/$file -C /home/documents/backups/ $source1 $source2 $source3 $source4 $source5 #$source...
 
 # generate md5sum for latest backup and put into file named '$file.md5sum'
-md5sum $target/$file >> $file.md5sum
+md5sum $target/$file >> $target/$file.md5sum
 
 # remove all backups older than '-mtime +x' (x day's)
 find . -path "/home/documents/backups/*.tar.gz" -mtime +3 -exec rm -f {} \;
