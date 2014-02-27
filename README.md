@@ -1,4 +1,5 @@
-    <This simple script lets you backup files/folders/etc. into a tar.gz archive>
+    <This simple script lets you backup files/folders/etc. into a tar.gz archive. It is capable of automatically removing older backups>
+    
     Copyright (C) <2014>  <Bent Haase>
 
     This program is free software: you can redistribute it and/or modify
