@@ -1,6 +1,6 @@
 #!bin/bash
 time=`date +"%d.%m.%Y_%H.%M.%S"` 	 # grab actual date and time
-file="$time.tar.gz"     			 # get filename with actual date an time
+file="$time.tar.gz"     		 # get filename with actual date an time
 
 # locate source file(s) (1 - x)
 source1="examplefolder1/"  
@@ -8,7 +8,7 @@ source2="file2.txt"
 source3="file3.txt" 
 source5="examplefolder2/"
 	
-target="/home/documents/backups" 		 # Destination of backup file.
+target="/home/documents/backups" 	 # Destination of backup file.
 
 # create backup
 tar -czf $target/$file -C /home/documents/backups/ $source1 $source2 $source3 $source4 $source5 #$source...
